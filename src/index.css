@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WatchIndex Design System - Cinema-inspired dark theme with gold accents */
+
+@layer base {
+  :root {
+    /* Cinema Dark Theme */
+    --background: 210 11% 4%;
+    --foreground: 210 20% 98%;
+
+    --card: 210 11% 6%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 210 11% 6%;
+    --popover-foreground: 210 20% 98%;
+
+    /* Gold primary for ratings and highlights */
+    --primary: 43 96% 56%;
+    --primary-foreground: 210 11% 4%;
+
+    /* Dark secondary */
+    --secondary: 210 11% 11%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 210 11% 8%;
+    --muted-foreground: 210 10% 65%;
+
+    /* Gold accent */
+    --accent: 43 96% 56%;
+    --accent-foreground: 210 11% 4%;
+
+    /* Red for favorites/actions */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 210 11% 15%;
+    --input: 210 11% 8%;
+    --ring: 43 96% 56%;
+
+    --radius: 0.75rem;
+
+    /* Custom WatchIndex tokens */
+    --cinema-black: 210 11% 4%;
+    --cinema-gray: 210 11% 8%;
+    --cinema-gray-light: 210 11% 15%;
+    --cinema-gold: 43 96% 56%;
+    --cinema-gold-dark: 43 96% 46%;
+    --cinema-red: 0 84% 60%;
+    --cinema-white: 210 20% 98%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cinema-black)), hsl(var(--cinema-gray)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--cinema-gray)), hsl(var(--cinema-gray-light)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--cinema-gold)), hsl(var(--cinema-gold-dark)));
+    
+    /* Shadows */
+    --shadow-card: 0 10px 30px -15px hsl(var(--cinema-black) / 0.7);
+    --shadow-gold: 0 0 30px hsl(var(--cinema-gold) / 0.3);
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Layout styles */
+  #root {
+    @apply flex flex-col min-h-screen;
+  }
+
+  /* Global component styles */
+  .movie-card {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+  
+  .gold-gradient {
+    background: var(--gradient-gold);
+  }
+  
+  /* Animations */
+  .cinema-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+  
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  /* Shadows */
+  .cinema-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .gold-glow {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  /* Navigation link underlines */
+  .nav-link {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform hover:after:origin-bottom-left hover:after:scale-x-100;
+  }
+  
+  /* Scrollbar hiding */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Custom premium scrollbar styles */
+  .scrollbar-premium {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.2) transparent;
+  }
+
+  .scrollbar-premium::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-premium::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  .scrollbar-premium::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.2);
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+
+  .scrollbar-premium::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.4);
+  }
+
+  .scrollbar-premium::-webkit-scrollbar-thumb:active {
+    background: hsl(var(--primary) / 0.6);
+  }
+  
+  /* Line clamp utilities */
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Apply premium scrollbar to main page */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.2) transparent;
+  }
+
+  html::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.2);
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+
+  html::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.4);
+  }
+
+  html::-webkit-scrollbar-thumb:active {
+    background: hsl(var(--primary) / 0.6);
+  }
+}
+
+/* Keyframe animations */
+@keyframes gold-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
