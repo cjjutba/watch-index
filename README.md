@@ -10,7 +10,7 @@
 > **Your Ultimate Movie & TV Database** - A modern, responsive web application for discovering movies, TV shows, cast information, and more.
 
 **🌐 Live Demo:** [https://watchindex.vercel.app/](https://watchindex.vercel.app/)
-**📂 Repository:** [https://github.com/cjjutba/watchindex](https://github.com/cjjutba/watch-index)
+**📂 Repository:** [https://github.com/cjjutba/watch-index](https://github.com/cjjutba/watch-index)
 
 <div align="center">
   <a href="https://watchindex.vercel.app/" target="_blank">
