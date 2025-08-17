@@ -183,7 +183,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **CJ Jutba**
-- 🌐 **Portfolio**: [https://cjjutba.site/](https://cjjutba.site/)
+- 🌐 **Portfolio**: [https://cjjutba.com/](https://cjjutba.com/)
 - � **LinkedIn**: [https://www.linkedin.com/in/cjjutba/](https://www.linkedin.com/in/cjjutba/)
 - 🐙 **GitHub**: [https://github.com/cjjutba](https://github.com/cjjutba)
 - 📧 **Email**: [cjjutbaofficial@gmail.com](mailto:cjjutbaofficial@gmail.com)
