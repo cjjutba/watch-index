@@ -6,7 +6,6 @@
 </div>
 
 # 🎬 WatchIndex 
-
 > **Your Ultimate Movie & TV Database** - A modern, responsive web application for discovering movies, TV shows, cast information, and more.
 
 **🌐 Live Demo:** [https://watchindex.vercel.app/](https://watchindex.vercel.app/)
@@ -17,6 +16,20 @@
     <img src="src/assets/images/watch-index.png" alt="WatchIndex Banner" width="100%" />
   </a>
 </div>
+
+---
+
+## 📋 Table of Contents
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+- [📁 Project Structure](#-project-structure)
+- [📋 Available Scripts](#-available-scripts)
+- [🌐 API Integration](#-api-integration)
+- [⚡ Performance & Features](#-performance--features)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [👨‍💻 Author](#-author)
 
 ---
 
@@ -57,8 +70,8 @@
 - **🎭 TMDB API v3** - Comprehensive movie and TV show database
 
 ### UI & Styling
-- **� Radix UI** - Unstyled, accessible component primitives
-- **� Lucide React** - Beautiful & consistent icon library
+- **🎨 Radix UI** - Unstyled, accessible component primitives
+- **🎯 Lucide React** - Beautiful & consistent icon library
 - **🎪 Embla Carousel** - Lightweight, extensible carousel library
 - **📏 ESLint & TypeScript** - Code quality and type safety
 
@@ -71,7 +84,6 @@
 - **TMDB API Key** (free registration at [themoviedb.org](https://www.themoviedb.org/))
 
 ### 🔧 Installation
-
 1. **Clone and install**
    ```bash
    git clone https://github.com/cjjutba/watchindex.git
@@ -106,7 +118,6 @@
 ---
 
 ## 📁 Project Structure
-
 ```
 src/
 ├── components/          # Reusable UI components
@@ -124,7 +135,7 @@ src/
 
 ---
 
-## � Available Scripts
+## 📋 Available Scripts
 
 | Command | Description |
 |---------|-------------|
@@ -165,7 +176,6 @@ src/
 ---
 
 ## 🤝 Contributing
-
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
 3. Commit changes: `git commit -m 'Add amazing feature'`
@@ -175,7 +185,6 @@ src/
 ---
 
 ## 📄 License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
@@ -184,9 +193,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **CJ Jutba**
 - 🌐 **Portfolio**: [https://cjjutba.com/](https://cjjutba.com/)
-- � **LinkedIn**: [https://www.linkedin.com/in/cjjutba/](https://www.linkedin.com/in/cjjutba/)
+- 💼 **LinkedIn**: [https://www.linkedin.com/in/cjjutba/](https://www.linkedin.com/in/cjjutba/)
 - 🐙 **GitHub**: [https://github.com/cjjutba](https://github.com/cjjutba)
-- 📧 **Email**: [cjjutbaofficial@gmail.com](mailto:cjjutbaofficial@gmail.com)
+- 📧 **Email**: [hello@cjjutba.com](mailto:hello@cjjutba.com)
 
 ### 🎯 About This Project
 WatchIndex is a **portfolio project** showcasing modern React development skills, including advanced TypeScript usage, professional UI/UX design, API integration, responsive design, and performance optimization.
@@ -195,10 +204,9 @@ WatchIndex is a **portfolio project** showcasing modern React development skills
 
 <div align="center">
   <h3>🌟 If you found this project helpful, please give it a star! 🌟</h3>
-
+  
   [![GitHub stars](https://img.shields.io/github/stars/cjjutba/watchindex?style=social)](https://github.com/cjjutba/watchindex/stargazers)
   [![GitHub forks](https://img.shields.io/github/forks/cjjutba/watchindex?style=social)](https://github.com/cjjutba/watchindex/network/members)
-
+  
   **Built with ❤️ by CJ Jutba**
 </div>
-
